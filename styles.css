@@ -1,0 +1,36 @@
+body {
+  background-color: #f5efe6;
+}
+
+.container-buttons {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-buttons > button {
+  margin-left: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: #aebdca;
+  border-radius: 10px;
+  border: 0.1px solid #7895b2;
+}
+
+button p {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* content containers */
+
+.container-0 {
+}
+.container-1 {
+}
+.container-2 {
+}
+.container-3 {
+}
