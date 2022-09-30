@@ -1,0 +1,64 @@
+body {
+  background-color: #f5efe6;
+  margin: 0;
+}
+
+.news-container {
+  display: flex;
+  background-color: brown;
+  height: 12rem;
+  width: 23rem;
+}
+
+.news-link {
+  background-color: teal;
+  height: 30px;
+  width: 210px;
+}
+
+/* The Reader  */
+.main-container {
+  display: grid;
+  grid-template-columns: 15.3rem 1fr;
+  background-color: #ddd;
+}
+
+.left-container {
+  display: grid;
+  padding-top: 1.25rem;
+  gap: 5px;
+  overflow: auto;
+  height: 100vh;
+  justify-content: center;
+  grid-area: 1fr / 1fr;
+}
+
+.right-container {
+  display: grid;
+  padding-top: 20px;
+  justify-items: center;
+  overflow: auto;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 10px;
+}
+
+a {
+  color: #fff;
+  background-color: #0078aa;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+header button {
+  background-color: #0078aa;
+  height: 50px;
+  width: 100px;
+  border-radius: 10%;
+}

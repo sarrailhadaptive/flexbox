@@ -1,0 +1,37 @@
+body {
+  background-color: #f5efe6;
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: auto;
+  height: 100vh;
+}
+
+.news-container {
+  margin: 10px 0 0 10px;
+  background-color: brown;
+  height: 312px;
+  width: 412px;
+}
+
+a {
+  color: #fff;
+  background-color: #0078aa;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+button {
+  background-color: #0078aa;
+  height: 50px;
+  width: 100px;
+  border-radius: 10%;
+}

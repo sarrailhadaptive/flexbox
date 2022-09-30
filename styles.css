@@ -1,73 +1,50 @@
-body {
-  background-color: #f5efe6;
-  margin: 0;
-}
-
-.container-buttons {
-  display: flex;
-  width: 100%;
-  height: 150px;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.container-buttons > button {
-  margin-left: 10px;
-  width: 150px;
-  height: 50px;
-  background-color: #aebdca;
-  border-radius: 10px;
-  border: 0.1px solid #7895b2;
-}
-
-button p {
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.news-container {
-  background-color: brown;
-  height: 320px;
-  width: 320px;
-}
-/* EL CLASSICO  */
-
-.main-container-el-classico {
+.container {
+  background-color: #eee;
+  margin: 30px auto;
   display: grid;
-  grid-template-columns: 400px 1fr;
-  background-color: #ddd;
-}
-.left-container-el-classico {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  background-color: #ddd;
-  height: 100vh;
-  overflow: auto;
-}
-.right-container-el-classico {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-  background-color: #ddd;
-  height: 100vh;
-  overflow: auto;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 150px;
+  grid-gap: 30px;
+  width: 1000px;
+  height: 800px;
+  grid-template-areas:
+    "header header header header"
+    "box1 box2 box3 sidebar"
+    "main main main sidebar"
+    "footer footer footer footer";
 }
 
-/* ----------------------------- */
-.main-container-the-reader {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  background-color: #ddd;
+.header {
+  background-color: red;
+  grid-area: header;
 }
-.right-container-the-reader {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
-  background-color: #ddd;
-  height: 100vh;
-  overflow: auto;
+
+.small-box--1 {
+  grid-area: box1;
+  background-color: red;
+}
+
+.small-box--2 {
+  grid-area: box2;
+  background-color: red;
+}
+
+.small-box--3 {
+  grid-area: box3;
+  background-color: red;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: red;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: red;
 }
