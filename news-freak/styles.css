@@ -1,0 +1,35 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(406px, 5fr));
+  gap: 20px;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.main-header {
+  display: flex;
+  height: 50px;
+  background-color: white;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.header {
+  margin: 10px 0;
+  height: 50px;
+  width: 402px;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fff;
+  width: 402px;
+  height: 86vh;
+  overflow: hidden;
+}
