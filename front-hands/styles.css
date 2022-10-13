@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   border: solid 0.1px lightgray;
   background-color: #eee;
@@ -6,8 +10,8 @@
   grid-template-columns: 390px 1300px 390px;
   row-gap: 10px;
   column-gap: 26px;
-  width: 100vw;
-  height: 100vh;
+  width: 99.9vw;
+  height: 99.8vh;
   grid-template-areas:
     "header header header header"
     "box1 box2 box2 box3"
